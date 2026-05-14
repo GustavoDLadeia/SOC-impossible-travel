@@ -1,47 +1,46 @@
-# Login suspeito (impossible travel)
+# Suspicious Login (Impossible Travel)
 
-Cenário de possível login suspeito identificado por padrão de impossible travel, com acessos consecutivos do mesmo usuário em países distintos em curto intervalo de tempo. A discrepância geográfica sem uso de VPN autorizada indica forte indício de comprometimento de credenciais.
+Scenario involving a possible suspicious login identified through an impossible travel pattern, with consecutive access attempts from the same user in different countries within a short time interval. The geographical discrepancy without the use of an authorized VPN indicates a strong sign of credential compromise.
 
-## Resumo
+## Summary
 
-Foram identificados logins consecutivos do mesmo usuário a partir de localizações  
-geográficas distintas em curto intervalo de tempo, indicando possível comprometimento  
-de conta.
+Consecutive logins from the same user were identified originating from geographically  
+distinct locations within a short time interval, indicating possible account compromise.
 
-## Evidências
+## Evidence
 
-- Usuário: `ana.ferreira`
-- Login 1: Brasil — `10:15 AM`
-- Login 2: Alemanha — `10:22 AM`
-- Intervalo entre logins: 7 minutos
-- Ausência de VPN autorizada
+- User: `ana.ferreira`
+- Login 1: Brazil — `10:15 AM`
+- Login 2: Germany — `10:22 AM`
+- Interval between logins: 7 minutes
+- Absence of authorized VPN usage
 
-## Análise
+## Analysis
 
-O curto intervalo entre logins em localidades geograficamente distantes caracteriza um  
-padrão típico de "impossible travel", incompatível com deslocamento físico.
+The short interval between logins from geographically distant locations characterizes a  
+typical "impossible travel" pattern, incompatible with physical displacement.
 
-A ausência de registro de VPN autorizada reduz a probabilidade de atividade legítima.  
-No entanto, não se pode descartar completamente o uso de VPN não autorizada ou proxy.
+The absence of authorized VPN records reduces the likelihood of legitimate activity.  
+However, the use of an unauthorized VPN or proxy cannot be completely ruled out.
 
-Esse tipo de comportamento é frequentemente associado ao uso indevido de credenciais  
-comprometidas por terceiros.
+This type of behavior is frequently associated with the misuse of credentials  
+compromised by third parties.
 
-Não há evidência, no contexto analisado, que justifique atividade legítima para esse  
-padrão de acesso.
+There is no evidence, within the analyzed context, that justifies legitimate activity for this  
+access pattern.
 
-- Severidade: Alta
-- Confiança: Alta
+- Severity: High
+- Confidence: High
 
-## Conclusão
+## Conclusion
 
-Atividade altamente suspeita compatível com comprometimento de conta.
+Highly suspicious activity consistent with account compromise.
 
-## Ação
+## Action
 
-- Forçar redefinição de senha do usuário
-- Revogar sessões ativas
-- Validar com o usuário se houve acesso legítimo
-- Verificar origem dos IPs envolvidos
-- Monitorar novos logins suspeitos
-- Escalar para N2 caso comportamento persista
+- Force password reset for the user
+- Revoke active sessions
+- Validate with the user whether the access was legitimate
+- Verify the origin of the involved IPs
+- Monitor for new suspicious logins
+- Escalate to N2 if the behavior persists
